@@ -1,0 +1,18 @@
+@media (max-width: 900px) {
+  .master__container {
+    background-position-x: 80vw;
+  }
+  .contant {
+    align-items: center;
+    text-align: center;
+  }
+  .container__login__icon {
+    position: absolute;
+    bottom: 30px;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .container__tittle {
+    align-items: center;
+  }
