@@ -13,7 +13,7 @@ header {
 }
 
 .contant__login__icon {
-  background-image: url(/icon/log-in.svg);
+  background-image: url(./icon/log-in.svg);
   margin-right: 16px;
   width: 20px;
   height: 20px;
