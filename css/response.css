@@ -16,3 +16,15 @@
   .container__tittle {
     align-items: center;
   }
+
+@media (max-width:1700px) {
+  .master__container {
+    background-position-x: 40vw;
+  }
+}
+
+@media (max-height: 760px) {
+  .master__container {
+    background-position-y: 200px;
+  }
+}
