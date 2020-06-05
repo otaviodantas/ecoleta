@@ -1,5 +1,7 @@
 # Ecoleta
+![alt text](https://github.com/otaviodantas/ecoleta/tree/master/img/main.png)
 
+## Objetivo
 O website do Ecoleta, tem como intuito funcamental mostrar ao usuário locais adequados para o descarte de lixo de forma seletiva:
 
 - Papéis e Papelão;
