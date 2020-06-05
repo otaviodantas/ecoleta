@@ -1,28 +1,65 @@
 .contant__creat__point {
-    width: 90%;
-    max-width: 1100px;
+  width: 90%;
+  max-width: 1100px;
 
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 header {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container__login__icon {
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 .contant__login__icon {
-    background-image: url(/icon/arrow-left.svg);
-    width: 20px;
-    height: 20px;
-    display: flex;
-    padding-right: 8px;
+  background-image: url(/icon/arrow-left.svg);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  padding-right: 8px;
 }
 
+.itens-grid {
+  display: grid;
+  grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.itens-grid li {
+  list-style: none;
+  background-color: #e2e2e2;
+  height: 120px;
+  padding: 32px 24px 16px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #e2e2e2;
+}
+
+.itens-grid li span {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itens-grid li.selected {
+    background-color: #e1faec;
+    border: 2px solid #34cb79;
+}
+
+.itens-grid li img,
+.itens-grid li span {
+  pointer-events: none;
+}

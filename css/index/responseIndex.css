@@ -17,9 +17,8 @@
     align-items: center;
   }
 
-@media (max-width:1700px) {
-  .master__container {
-    background-position-x: 40vw;
+  .page__search__result .cards {
+    grid-template-columns: 1fr;
   }
 }
 

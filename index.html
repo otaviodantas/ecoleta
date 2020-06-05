@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ecoleta</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/header/header.css">
-  <link rel="stylesheet" href="css/main/main.css">
-  <link rel="stylesheet" href="css/response.css">
+  <link rel="stylesheet" href="css/index/allImportsIndex.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
@@ -18,7 +16,7 @@
     <section class="contant">
       <header>
         <img src="/icon/logo.svg" alt="">
-        <a href="https://www.google.com.br/" class="container__login__icon">
+        <a href="/create-point.html" class="container__login__icon">
           <span class="contant__login__icon"></span>
           Cadastre um ponto de coleta
         </a>
@@ -35,8 +33,28 @@
         </a>
       </main>
     </section>
-
   </div>
+
+  <div id="modal" class="hide">
+    <div class="content">
+      <div class="header">
+        <h1>Pontos de Coleta</h1>
+        <a href="#" class="close__page">Fechar</a>
+      </div>
+
+      <form action="/search-result.html">
+        <label for="search">Cidade</label>
+        <div class="search field">
+          <input type="text" name="search" placeholder="Pesquise por Cidade">
+          <button>
+            <img src="/icon/search.svg" alt="Buscar">
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,12 @@
+.tittle__main {
+  color: var(--tittle__main);
+  font-size: 50px;
+}
+
+.container__tittle {
+  display: flex;
+  height: 600px;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
