@@ -29,7 +29,7 @@
 
 .icon__button__search::after {
   content: "";
-  background-image: url(/icon/search.svg);
+  background-image: url(./icon/search.svg);
   width: 20px;
   height: 20px;
   color: aliceblue;
