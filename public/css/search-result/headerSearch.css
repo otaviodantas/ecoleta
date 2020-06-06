@@ -1,0 +1,20 @@
+header {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__login__icon {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.contant__login__icon {
+  background-image: url(/icon/arrow-left.svg);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  padding-right: 8px;
+}

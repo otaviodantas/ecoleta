@@ -1,0 +1,123 @@
+{% extends "layout.html" %}
+
+{% block tittle %}
+  <title>Criar ponto de coleta</title>
+{% endblock tittle %}
+
+{% block style %}
+  <link rel="stylesheet" href="./css/create-point/create-point.css">
+  <link rel="stylesheet" href="./css/create-point/form.css">
+  <link rel="stylesheet" href="./css/create-point/responsePoint.css">
+{% endblock style %}
+
+{% set bodyClass = "contant__creat__point" %}
+
+{% block content %}
+  {% include "partials/header.html" %}
+
+  <form action="" class="content__point">
+
+    <h1 class="tittle__main">Cadastro da coleta</h1>
+
+    <fieldset>
+      <legend>
+        <h2>Dados da entidade</h2>
+      </legend>
+
+      <div class="field__group">
+
+        <div class="field">
+          <label for="name">
+            Nome da entidade
+          </label>
+          <input type="text" name="name" required="required">
+        </div>
+
+        <div class="field">
+          <label for="name" class="contant__label">
+            Imagem da entidade
+          </label>
+          <input type="url" name="image" required="required" placeholder="http://" class="contant__label">
+        </div>
+
+      </div>
+
+      <div class="field__group" required="required">
+        <div class="field">
+          <label for="adress">Endereço</label>
+          <input type="text" name="adress" required="required">
+        </div>
+
+        <div class="field">
+          <label for="adress2" class="contant__label">Número/Complemento</label>
+          <input type="text" name="adress2" class="contant__label" required="required">
+        </div>
+
+      </div>
+
+      <div class="field__group">
+
+        <div class="field">
+          <label for="state">Estado</label>
+          <select name="uf" required="required">
+            <option value="">Selecione o Estado
+            </option>
+            <option value="1">Opção de estado</option>
+          </select>
+          <input type="hidden" name="state">
+        </div>
+
+        <div class="field">
+          <label for="city" class="contant__label">Cidade</label>
+          <select name="city" id="" class="contant__label" disabled="disabled" required="required">
+            <option value="">Selecione a Cidade</option>
+          </select>
+        </div>
+
+      </div>
+
+      <button type="submit">Cadastrar ponto de coleta</button>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>
+        <h2>Itens de Coleta</h2>
+        <span>Selecione um ou mais itens abaixo</span>
+      </legend>
+
+      <div class="itens-grid">
+        <li data-id="1">
+          <img src="/icon/lampadas.svg" alt="Lâmpadas">
+          <span>Lâmpadas</span>
+        </li>
+        <li data-id="2">
+          <img src="/icon/baterias.svg" alt="Pilhas e Baterias">
+          <span>Pilhas e Baterias</span>
+        </li>
+        <li data-id="3">
+          <img src="/icon/papeis-papelao.svg" alt="Papeis e Papelão">
+          <span>Papeis e Papelão</span>
+        </li>
+        <li data-id="4">
+          <img src="/icon/eletronicos.svg" alt="Resíduos Eletrônicos">
+          <span>Resíduos Eletrônicos</span>
+        </li>
+        <li data-id="5">
+          <img src="/icon/organicos.svg" alt="Resíduos Orgânicos">
+          <span>Resíduos Orgânicos</span>
+        </li>
+        <li data-id="6">
+          <img src="/icon/oleo.svg" alt="Óleo de Cozinha">
+          <span>Óleo de Cozinha</span>
+        </li>
+      </div>
+      <input type="hidden" name="items">
+    </fieldset>
+
+  </form>
+{% endblock content %}
+
+{% block script %}
+  <script src="/js/create-point.js"></script>
+{% endblock script %}

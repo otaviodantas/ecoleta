@@ -1,0 +1,13 @@
+@media (max-width: 900px) {
+  .contant__creat__point .field__group {
+    flex-direction: column;
+  }
+
+  .contant__creat__point .contant__label {
+    margin-left: 0;
+  }
+
+  .itens-grid {
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr;
+  }
+}

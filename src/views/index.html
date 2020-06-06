@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% set bodyClass = "master__container" %}
+
+{% block tittle %}
+  <title>Ecoleta</title>
+{% endblock tittle %}
+
+{% block style %}
+  <link rel="stylesheet" href="./css/index/allImportsIndex.css">
+{% endblock style %}
+
+{% block content %}
+  <section class="contant">
+    <header>
+      <img src="/icon/logo.svg" alt="">
+      <a href="/create-point" class="container__login__icon">
+        <span class="contant__login__icon"></span>
+        Cadastre um ponto de coleta
+      </a>
+    </header>
+
+    <main class="container__tittle">
+
+      <h1 class="tittle__main">Seu marketplace de coleta de resíduos</h1>
+      <p>Ajudamos a encontrar pontos de coleta de forma eficiente</p>
+
+      <a href="#" class="contet__button">
+        <span class="icon__button__search"></span>
+        <p class="content__text__button">Pesquisar pontos de coleta</p>
+      </a>
+    </main>
+  </section>
+{% endblock content %}
+
+{% block modal %}
+  {% include "partials/modal.html" %}
+{% endblock modal %}
+
+{% block script %}
+  <script src="js/index.js"></script>
+{% endblock script %}
